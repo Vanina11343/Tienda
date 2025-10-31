@@ -1,0 +1,21 @@
+[
+  {
+    "id": "p001",
+    "name": "Musculosa Blanca",
+    "description": "Musculosa de algodón 100%, corte regular.",
+    "price": 10500,
+    "sizes": ["Unico"],
+    "image": "images/01 musculosa blanca talle unico.png",
+    "stock": 4
+  },
+  {
+    "id": "p002",
+    "name": "Pantalón Lino",
+    "description": "Lino tiro medio con pinzas.",
+    "price": 32000,
+    "sizes": ["1","2"],
+    "image": "images/02 pantalon lino militar talle 2.png",
+    "stock": 4
+
+  }
+]
