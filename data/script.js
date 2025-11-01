@@ -69,26 +69,26 @@ modal.addEventListener('click', (e) => {
 });
 
 // Contact button - arma mailto:
-contactBtn.addEventListener('click', () => {
-  if (!currentProduct) return;
-  const sellerEmail = 'vendedor@mitienda.com'; // cambiar por el real
-  const subject = encodeURIComponent(Consulta por producto ${currentProduct.id} - ${currentProduct.name});
-  const bodyLines = [
-    Hola,,
-    ``,
-    Me interesa el producto ${currentProduct.name} (ID: ${currentProduct.id}).,
-    Precio: $${currentProduct.price},
-    Talles disponibles: ${currentProduct.sizes.join(', ')},
-    ``,
-    Quisiera consultar sobre: [agregar consulta aquí],
-    ``,
-    Saludos,,
-    [Tu nombre]
-  ];
-  const body = encodeURIComponent(bodyLines.join('\n'));
-  const mailto = mailto:${sellerEmail}?subject=${subject}&body=${body};
-  window.location.href = mailto;
-});
+//contactBtn.addEventListener('click', () => {
+//  if (!currentProduct) return;
+//  const sellerEmail = 'vendedor@mitienda.com'; // cambiar por el real
+//  const subject = encodeURIComponent(Consulta por producto ${currentProduct.id} - ${currentProduct.name});
+//  const bodyLines = [
+//    Hola,,
+//    ``,
+//    Me interesa el producto ${currentProduct.name} (ID: ${currentProduct.id}).,
+//    Precio: $${currentProduct.price},
+//    Talles disponibles: ${currentProduct.sizes.join(', ')},
+//    ``,
+//    Quisiera consultar sobre: [agregar consulta aquí],
+//    ``,
+//    Saludos,,
+//    [Tu nombre]
+//  ];
+//  const body = encodeURIComponent(bodyLines.join('\n'));
+//  const mailto = mailto:${sellerEmail}?subject=${subject}&body=${body};
+//  window.location.href = mailto;
+//});
 
 // util
 function escapeHtml(text) {
