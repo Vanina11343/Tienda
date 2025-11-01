@@ -5,7 +5,7 @@
     "description": "Musculosa de algodón 100%, corte regular.",
     "price": 10500,
     "sizes": ["Unico"],
-    "image": "images/01-MUSCULOSA-BLANCA-TALLE-UNICO.png",
+    "image": "images/01-MUSCULOSA-BLANCA-TALLE-UNICO.jpg",
     "stock": 4
   },
   {
@@ -14,7 +14,7 @@
     "description": "Lino tiro medio con pinzas.",
     "price": 32000,
     "sizes": ["1","2"],
-    "image": "images/02-PANTALON-LINO-MILITAR-TALLE-2.png",
+    "image": "images/02-PANTALON-LINO-MILITAR-TALLE-2.jpg",
     "stock": 4
 
   }
