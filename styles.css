@@ -9,8 +9,8 @@ body {
 .intro {
   height: 100vh;
   background: url('images/logo.jpg') center center no-repeat;
-  background-size: contain;
-  background-color: #11120D; /* color de fondo detrás del logo */
+  background-size: cover; /* ✅ hace que el logo cubra toda la pantalla */
+  background-color: #11120D; /* color detrás del logo si hay bordes */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +18,7 @@ body {
 }
 
 .intro-overlay {
-  background-color: rgba(17, 18, 13, 0.7);
+  background-color: rgba(17, 18, 13, 0.6); /* capa oscura para que el texto se lea bien */
   position: absolute;
   inset: 0;
   display: flex;
@@ -31,6 +31,7 @@ body {
   color: white;
   max-width: 600px;
   padding: 2rem;
+  z-index: 2;
 }
 
 .intro-content h1 {
