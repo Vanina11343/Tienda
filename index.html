@@ -1,60 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tienda - Catálogo</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KYOMU essence</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Presentación (fit inicial) -->
+  <section class="intro">
+    <div class="intro-content">
+      <img src="images/logo.jpg" alt="Logo Kyomu essence" class="logo">
+      <h1>KYOMU essence</h1>
+      <p class="slogan">No es solo ropa, es identidad.</p>
+      <p class="descripcion">
+        Marca urbana que combina frescura, versatilidad y estilo propio.  
+        Inspirada en lo moderno y lo retro, Kyomu ofrece prendas esenciales,  
+        neutras y de calidad, que reflejan autenticidad y personalidad.
+      </p>
+      <a href="#catalogo" class="btn">Ver catálogo</a>
+    </div>
+  </section>
+
+  <!-- Encabezado -->
   <header class="site-header">
-    <div class="logo">MiTienda</div>
+    <div class="logo-nombre">
+      <img src="images/logo.jpg" alt="Logo KYOMU">
+      <span>KYOMU essence</span>
+    </div>
     <nav class="main-nav">
-      <a href="#">Inicio</a>
-      <a href="#catalog">Catálogo</a>
-      <a href="#contact">Contacto</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Tienda de Ropa</h1>
-      <p>Encuentra prendas de calidad — selecciona y contacta al vendedor.</p>
-      <a class="btn" href="#catalog">Ver catálogo</a>
-    </section>
-
-    <section id="catalog" class="catalog">
-      <h2>Catálogo</h2>
-      <div id="product-grid" class="product-grid">
-        <!-- Las cards se inyectan con JS -->
+  <!-- Catálogo -->
+  <section id="catalogo" class="catalogo">
+    <h2>Prendas destacadas</h2>
+    <div class="product-grid">
+      <div class="card">
+        <img src="images/MUSCULOSA.jpg" alt="Musculosa blanca">
+        <h4>Musculosa blanca</h4>
+        <p>Tejido suave y fresco. Ideal para looks urbanos.</p>
       </div>
-    </section>
-  </main>
 
-  <!-- Modal detalle -->
-  <div id="product-modal" class="modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="modal-content">
-      <button id="modal-close" class="modal-close" aria-label="Cerrar">✕</button>
-      <div class="modal-body">
-        <img id="modal-image" src="" alt="" />
-        <div class="modal-info">
-          <h3 id="modal-name"></h3>
-          <p id="modal-desc"></p>
-          <p><strong>Precio:</strong> $<span id="modal-price"></span></p>
-          <p><strong>Stock:</strong> <span id="modal-stock"></span></p>
-          <p><strong>Talles:</strong> <span id="modal-sizes"></span></p>
-          <div class="modal-actions">
-            <button id="contact-btn" class="btn">Contactar vendedor</button>
-          </div>
-        </div>
+      <div class="card">
+        <img src="images/02PANTALON.jpg" alt="Pantalón verde">
+        <h4>Pantalón verde</h4>
+        <p>Comodidad y estilo en una prenda esencial.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/03REMERABLANCIA.jpg" alt="Remera blanca">
+        <h4>Remera blanca básica</h4>
+        <p>Versátil, minimal y atemporal. 100% algodón.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/04REMERACARAMEL.jpg" alt="Remera caramelo">
+        <h4>Remera caramelo</h4>
+        <p>Color neutro que combina con todo. Corte unisex.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/05REMEHOMBREMARRON.jpg" alt="Remera marrón hombre">
+        <h4>Remera marrón</h4>
+        <p>Estilo urbano y relajado, con detalles premium.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/06REMEHOMBRENEGRA.jpg" alt="Remera negra hombre">
+        <h4>Remera negra</h4>
+        <p>Básico esencial. Corte recto y textura suave.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/07REME46.jpg" alt="Remera deportiva 46">
+        <h4>Remera deportiva 46</h4>
+        <p>Estilo street moderno con inspiración retro.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/08SHORTROTURA.jpg" alt="Short con rotura">
+        <h4>Short con rotura</h4>
+        <p>Casual y cómodo, ideal para el día a día.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/09STORITSTRASS.jpg" alt="Top con strass">
+        <h4>Top con strass</h4>
+        <p>Detalle brillante que resalta tu estilo único.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/10BERMUDALINO.jpg" alt="Bermuda lino">
+        <h4>Bermuda de lino</h4>
+        <p>Tejido natural, fresco y sofisticado.</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <footer class="site-footer">
-    <small>&copy; 2025 MiTienda - Trabajo práctico</small>
+  <!-- Contacto -->
+  <footer id="contacto" class="footer">
+    <p>© 2025 Kyomu essence — Rafaela, Santa Fe</p>
+    <p>Seguinos en Instagram: <a href="#">@kyomu.essence</a></p>
   </footer>
 
-  <script src="scripts.js"></script>
 </body>
 </html>
