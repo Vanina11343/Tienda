@@ -26,7 +26,7 @@
   </section>
 
   <!-- Encabezado -->
-  <header class="site-header">
+  <header class="site-header" id="inicio">
     <div class="logo-nombre">
       <img src="images/logo.jpg" alt="Logo KYOMU">
       <span>KYOMU essence</span>
@@ -41,26 +41,94 @@
   <!-- Catálogo -->
   <section id="catalogo" class="catalogo">
     <h2>Prendas destacadas</h2>
+
     <div class="product-grid">
-      <div class="card"><img src="images/MUSCULOSA.jpg" alt="Musculosa blanca"><h4>Musculosa blanca</h4><p>Tejido suave y fresco. Ideal para looks urbanos.</p></div>
-      <div class="card"><img src="images/02PANTALON.jpg" alt="Pantalón verde"><h4>Pantalón verde</h4><p>Comodidad y estilo en una prenda esencial.</p></div>
-      <div class="card"><img src="images/03REMERABLANCA.jpg" alt="Remera blanca"><h4>Remera blanca básica</h4><p>Versátil, minimal y atemporal. 100% algodón.</p></div>
-      <div class="card"><img src="images/04REMERACARAMEL.jpg" alt="Remera caramelo"><h4>Remera caramelo</h4><p>Color neutro que combina con todo. Corte unisex.</p></div>
-      <div class="card"><img src="images/05REMEHOMBREMARRON.jpg" alt="Remera marrón hombre"><h4>Remera marrón</h4><p>Estilo urbano y relajado, con detalles premium.</p></div>
-      <div class="card"><img src="images/06REMEHOMBRENEGRA.jpg" alt="Remera negra hombre"><h4>Remera negra</h4><p>Básico esencial. Corte recto y textura suave.</p></div>
-      <div class="card"><img src="images/07REME46.jpg" alt="Remera deportiva 46"><h4>Remera deportiva 46</h4><p>Estilo street moderno con inspiración retro.</p></div>
-      <div class="card"><img src="images/08SHORTROTURA.jpg" alt="Short con rotura"><h4>Short con rotura</h4><p>Casual y cómodo, ideal para el día a día.</p></div>
-      <div class="card"><img src="images/09STORTSTRASS.jpg" alt="Top con strass"><h4>Top con strass</h4><p>Detalle brillante que resalta tu estilo único.</p></div>
-      <div class="card"><img src="images/10BERMUDALINO.jpg" alt="Bermuda lino"><h4>Bermuda de lino</h4><p>Tejido natural, fresco y sofisticado.</p></div>
+
+      <!-- Cada tarjeta ahora tiene un botón "Ver más" para abrir el modal -->
+      <div class="card" data-name="Musculosa blanca" data-desc="Tejido suave y fresco. Ideal para looks urbanos." data-img="images/MUSCULOSA.jpg">
+        <img src="images/MUSCULOSA.jpg" alt="Musculosa blanca">
+        <h4>Musculosa blanca</h4>
+        <button class="ver-btn">Ver más</button>
+      </div>
+
+      <div class="card" data-name="Pantalón verde" data-desc="Comodidad y estilo en una prenda esencial." data-img="images/02PANTALON.jpg">
+        <img src="images/02PANTALON.jpg" alt="Pantalón verde">
+        <h4>Pantalón verde</h4>
+        <button class="ver-btn">Ver más</button>
+      </div>
+
+      <div class="card" data-name="Remera blanca básica" data-desc="Versátil, minimal y atemporal. 100% algodón." data-img="images/03REMERABLANCA.jpg">
+        <img src="images/03REMERABLANCA.jpg" alt="Remera blanca básica">
+        <h4>Remera blanca básica</h4>
+        <button class="ver-btn">Ver más</button>
+      </div>
+
+      <div class="card" data-name="Remera caramelo" data-desc="Color neutro que combina con todo. Corte unisex." data-img="images/04REMERACARAMEL.jpg">
+        <img src="images/04REMERACARAMEL.jpg" alt="Remera caramelo">
+        <h4>Remera caramelo</h4>
+        <button class="ver-btn">Ver más</button>
+      </div>
+
+      <div class="card" data-name="Remera marrón" data-desc="Estilo urbano y relajado, con detalles premium." data-img="images/05REMEHOMBREMARRON.jpg">
+        <img src="images/05REMEHOMBREMARRON.jpg" alt="Remera marrón hombre">
+        <h4>Remera marrón</h4>
+        <button class="ver-btn">Ver más</button>
+      </div>
+
+      <div class="card" data-name="Remera negra" data-desc="Básico esencial. Corte recto y textura suave." data-img="images/06REMEHOMBRENEGRA.jpg">
+        <img src="images/06REMEHOMBRENEGRA.jpg" alt="Remera negra hombre">
+        <h4>Remera negra</h4>
+        <button class="ver-btn">Ver más</button>
+      </div>
+
+      <div class="card" data-name="Remera deportiva 46" data-desc="Estilo street moderno con inspiración retro." data-img="images/07REME46.jpg">
+        <img src="images/07REME46.jpg" alt="Remera deportiva 46">
+        <h4>Remera deportiva 46</h4>
+        <button class="ver-btn">Ver más</button>
+      </div>
+
+      <div class="card" data-name="Short con rotura" data-desc="Casual y cómodo, ideal para el día a día." data-img="images/08SHORTROTURA.jpg">
+        <img src="images/08SHORTROTURA.jpg" alt="Short con rotura">
+        <h4>Short con rotura</h4>
+        <button class="ver-btn">Ver más</button>
+      </div>
+
+      <div class="card" data-name="Top con strass" data-desc="Detalle brillante que resalta tu estilo único." data-img="images/09STORTSTRASS.jpg">
+        <img src="images/09STORTSTRASS.jpg" alt="Top con strass">
+        <h4>Top con strass</h4>
+        <button class="ver-btn">Ver más</button>
+      </div>
+
+      <div class="card" data-name="Bermuda de lino" data-desc="Tejido natural, fresco y sofisticado." data-img="images/10BERMUDALINO.jpg">
+        <img src="images/10BERMUDALINO.jpg" alt="Bermuda lino">
+        <h4>Bermuda de lino</h4>
+        <button class="ver-btn">Ver más</button>
+      </div>
+
     </div>
   </section>
 
+  <!-- Modal -->
+  <div class="modal hidden" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">✖</button>
+      <div class="modal-body">
+        <img id="modalImg" src="" alt="">
+        <div class="modal-info">
+          <h2 id="modalName"></h2>
+          <p id="modalDesc"></p>
+          <a id="contactBtn" class="btn" target="_blank">Contactar vendedor</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Contacto -->
   <footer id="contacto" class="footer">
-    <p>© 2025 Kyomu essence — Rafaela, Santa Fe</p>
+    <p>©️ 2025 Kyomu essence — Rafaela, Santa Fe</p>
     <p>Seguinos en Instagram: <a href="#">@kyomu.essence</a></p>
   </footer>
 
+  <script src="app.js"></script>
 </body>
 </html>
-
