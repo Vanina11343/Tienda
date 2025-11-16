@@ -19,9 +19,9 @@ document.querySelectorAll(".ver-btn").forEach(btn => {
     modalDesc.textContent = desc;
 
     // Mensaje para WhatsApp
-    const mensaje = encodeURIComponent("Hola, estoy interesado/a en el producto:" + $(name) + ". ¿Está disponible?");
+    //const mensaje = encodeURIComponent("Hola, estoy interesado/a en el producto:" + $(name) + ". ¿Está disponible?");
 
-    contactBtn.href = "https://wa.me/5493492216758?text="+$(mensaje);
+    //contactBtn.href = "https://wa.me/5493492216758?text="+$(mensaje);
 
     modal.classList.remove("hidden");
   });
