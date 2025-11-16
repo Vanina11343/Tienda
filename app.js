@@ -11,12 +11,18 @@ document.querySelectorAll(".ver-btn").forEach(btn => {
     const card = e.target.closest(".card");
 
     const name = card.dataset.name;
-    const desc = card.dataset.desc;
-    const img = card.dataset.img;
+const desc = card.dataset.desc;
+const img = card.dataset.img;
+const talle = card.dataset.talle;
+const precio = card.dataset.precio;
 
-    modalImg.src = img;
-    modalName.textContent = name;
-    modalDesc.textContent = desc;
+modalImg.src = img;
+modalName.textContent = name;
+modalDesc.textContent = `${desc}
+Talle: ${talle}
+Precio: ${precio}`;
+
+
 
     // Mensaje para WhatsApp
     const mensaje = encodeURIComponent(`Hola, estoy interesado/a en el producto: ${name}. ¿Está disponible?`);
